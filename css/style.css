@@ -450,8 +450,8 @@ header {
     transition: all 0.2s linear;
 }
 
-#social .social i:hover {
-    transform: scale(1);
+.social i:hover {
+    transform: scale(1.1);
     transition: 0.2s linear;
     margin-right: 0;
 }
