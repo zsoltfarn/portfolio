@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap');
+
+
+* {
+    /* border: 1px solid; */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+header {
+  display: flex;
+}
+
+.logo {
+  color: #132b3f;
+  font-size: 60px;
+  font-weight: 700;
+  position: relative;
+  padding-top: 30px;
+  margin: 0 auto;
+  }
+  
+  main {
+    margin: 0 auto;
+    text-align: center;
+    color: #132b3f;
+  }
+  
+  h1 {
+    padding-top: 100px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 1.1px;
+    text-align: center;
+    color: #132b3f;
+    margin: auto;
+  }
+
+  h2 {
+    padding-bottom: 10px;
+  }
+  
+  h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+    line-height: 1.29;
+    color: #fff;
+    padding: 5px;
+  }
+  
+  p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.36;
+    text-align: left;
+    color: #fff;
+    padding-left: 5px;
+  }
+  
+  form {
+    padding: 50px;
+  }
+  
+  footer {
+    display: flex;
+    align-items: center;
+    height: 50px;
+  }
+  
+  .weather h2 {
+    position: relative;
+    padding: 5px;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: auto;
+    visibility: hidden;
+  }
+  
+  .weather h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    line-height: 0.78;
+    text-align: left;
+    color: #000;
+  }
+  
+  .weather {
+    background-color: #fff;
+    margin: 30px;
+    border-radius: 10px;
+    width: 200px;
+    height: 150px;
+    padding: 20px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+  }
+  
+  .weathericon {
+    width: 150px;
+    height: 150px;
+  }
+
+  #venues {
+    display: block;
+  }
+
+  ::-webkit-input-placeholder {
+    color: silver;
+  }
+  
+  :-moz-placeholder {
+    color: silver;
+  }
+  
+  ::-moz-placeholder {
+    color: silver;
+  }
+  
+  :-ms-input-placeholder {
+    color: #888;
+  }
+  
+  .venue {
+    color: black;
+    background-color: #3f88c5;
+    display: grid;
+    border-radius: 10px;
+    margin: 10px;
+    width: 275px;
+    padding: 20px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+  }
+  
+  .venueimage {
+    position: relative;
+    margin: 15px auto;
+  }
+  
+  #venues h2 {
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 0.77;
+    text-align: center;
+    padding-top: 5px;
+  }
+  
+  #destination {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 0.9px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 15px;
+  }
+  
+  .sectiontitle {
+    width: 300px;
+    align-items: center;
+  }
+  
+  .sectiontitle h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 3.4px;
+    text-align: left;
+    color: #000;
+  }
+  
+  #venues {
+    display: flex;
+    justify-content: space-around;
+    min-height: 180px;
+  }
+  
+  #weather {
+    display: flex;
+    justify-content: space-around;
+    min-height: 150px;
+  }
+  
+  #city {
+    width: 286px;
+    height: 46px;
+    border-radius: 4px;
+    border: solid 2.5px #000;
+    background-color: inherit;
+    opacity: 0.73;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: 0.4px;
+    text-align: left;
+    color: black;
+  }
+  
+  #button {
+    border: 0;
+    width: 140px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: #27b7c1;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 0.94;
+    letter-spacing: 0.5px;
+    text-align: center;
+    background-color: #3f88c5;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  #button:hover {
+   color: #c0d8ec;
+   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+  
+  @media (max-width: 860px) {
+    main {
+      background-image: url('https://s3.amazonaws.com/codecademy-content/courses/intermediate-javascript-requests/wanderlust/background_photo_moble.jpg');
+    }
+  
+    h1 {
+      padding-top: 80px;
+      font-size: 32px;
+    }
+  
+    form {
+      margin-top: 30px;
+      padding-bottom: 10px;
+    }
+  
+    #venues, #weather {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .venue, .weather {
+      margin: 10px auto;
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      align-items: center;
+    }
+  
+    .weather {
+      padding: 10px 20px;
+      height: 100%;
+    }
+  
+    .sectiontitle, .sectiontitle h2, #destination {
+      margin: auto;
+      text-align: center;
+    }
+  }

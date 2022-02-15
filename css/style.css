@@ -1,0 +1,707 @@
+/* To do: Make it responsive, mobile friendly */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap');
+
+
+* {
+    /* border: 1px solid; */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    
+}
+
+html {
+    font-size: 16px;
+    letter-spacing: -0.032em;
+    line-height: 1.47059;
+}
+
+body {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    background-image: url("/images/bg2.jpeg");
+    background-color: #3f88c5;
+    background-size: cover;
+}
+
+body,
+p,
+a,
+h4,
+h3 {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 6.5rem;
+    padding-top: 0;
+    font-weight: 900;
+    margin: 50px 20px;
+}
+
+h2 {
+    font-size: 2.7rem;
+    padding: 5px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.8rem;
+    padding: 0;
+    font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    text-align: center;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+#index {
+    display: flex;
+    justify-content: center; /* center horizontally */
+    align-items: center; /* center vertically */
+}
+
+.button {
+    font-size: 1.8rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    text-align: center;
+    color: #3f88c5;
+    margin: 0 auto;
+    padding: 6px 25px 6px 25px;
+    min-width: 10ch;
+    min-height: 44px;
+    border-radius: 50px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.button:hover {
+   color: #72a8d5;
+   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.button:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+    color: #3f88c5;
+    box-shadow: none;
+}
+
+/* Header */
+
+header {
+    display: inline-flex;
+    width: 100%;
+}
+
+/* Navigation */
+
+#menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1000;
+    height: 40px;
+}
+
+#menu a:hover {
+    text-decoration: underline;
+}
+
+.topnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    overflow: hidden;
+    width: 40%;
+    max-width: 1080px;
+    height: 100%;
+
+}
+
+.topnav a {
+    display: block;
+    padding-top: 5px;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.topnav a:active {
+    text-decoration: none;
+}
+
+.topnav .icon {
+    padding: 8px 25px 10px 25px;
+    display: none;
+}
+
+.topnav .icon:active {
+    background-color: #d0f0ed;
+    color: #5844F5;
+}
+
+/* Section */
+
+
+
+#index {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 1vh;
+}
+
+/* Portfolio */
+
+#portfolio {
+    
+    display: flex;
+    margin: 50px auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    transition: all 0.2s linear;
+}
+
+#portfolio > a {
+    font-weight: 700;
+    display: flex;
+    border: solid white 5px;
+    border-radius: 50%;
+    width: 190px;
+    height: 190px;
+    color: #3f88c5;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px;
+    margin: 30px;
+    box-sizing: border-box;
+}
+
+#portfolio a:hover {
+    /* border: solid white 10px; */
+    margin-top: 25px;
+    overflow: hidden;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+#cryptoviewer {
+    background-size: cover;
+    background-image: url("/images/cryptoviewer.png");
+}
+
+#prowin {
+    background-size: cover;
+    background-image: url("/images/prowin.jpg");
+}
+
+#phonelock {
+    background-size: cover;
+    background-image: url("/images/Cryptofreak.png");
+}
+
+#vanderlust {
+    background-color: #72a8d5;
+}
+
+#wordsmith {
+    background-color: antiquewhite;
+}
+
+.effect div {
+    border-radius: 20px;
+    padding: 8px 20px;
+    background-color: #fff;
+    opacity: 1;
+}
+
+.effect:hover div {
+    opacity: 0.35;
+}
+
+/* Contact form*/
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    width: 90%;
+  }
+  
+  #contact input[type="text"],
+  #contact input[type="email"],
+  #contact input[type="tel"],
+  #contact input[type="url"],
+  #contact textarea,
+  #contact button[type="submit"] {
+    font-size: 1rem;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  #contact {
+    display: flexbox;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 50px;
+  }
+
+  /* #contact:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  } */
+  
+  fieldset {
+    display: flex;
+    justify-content: center;
+    border: medium none !important;
+    width: 100%;
+    max-width: 500px;
+    padding: 0;
+    margin: 10px 0 25px 0;
+    border: 1px solid black;
+  }
+  
+  #contact input[type="text"],
+  #contact input[type="email"],
+  #contact input[type="tel"],
+  #contact input[type="url"],
+  #contact textarea {
+      font-size: 1.2rem;
+    font-weight: 400;
+    min-width: 250px;
+    width: 100%;
+    border: 0;
+    border-radius: 10px;
+    background: #FFF;
+    margin: 0 auto;
+    padding: 11px;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  #contact input[type="text"]:hover,
+  #contact input[type="email"]:hover,
+  #contact input[type="tel"]:hover,
+  #contact input[type="url"]:hover,
+  #contact textarea:hover {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  #contact textarea {
+      border: none;
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+  }
+  
+  #contact button[type="submit"] {
+    cursor: pointer;
+    background-color: #FFF;
+    font-size: 1.2em;
+    font-weight: 600;
+    width: 100%;
+    color:#3f88c5;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+  }
+  
+  #contact button[type="submit"]:hover {
+    color: #72a8d5;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  #contact button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+  }
+  
+  #contact input:focus,
+  #contact textarea:focus {
+    outline: 0;
+    border: none;
+    background: hsl(160, 60%, 99%);
+  }
+  
+  ::-webkit-input-placeholder {
+    color: silver;
+  }
+  
+  :-moz-placeholder {
+    color: silver;
+  }
+  
+  ::-moz-placeholder {
+    color: silver;
+  }
+  
+  :-ms-input-placeholder {
+    color: #888;
+  }
+
+  /* Contact form End */
+
+  /* Social Container */
+
+#container {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 85px;
+    bottom: 0;
+    padding: 0;
+   
+}
+
+#social {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    top: 0px;
+    text-align: center;
+    border-radius: 50%;
+    height: 600px;
+    max-width: 600px;
+    transition: all 0.2s linear;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#container .up {
+    top: 9px;
+}
+
+#container .down {
+    top: 55px; 
+    
+}
+
+.rotate.out {
+    transform: rotate(180deg);
+    
+}
+
+.hide {
+    visibility: hidden;
+}
+
+#gode.changecolor {
+    color: #ddd;
+}
+
+.magnify {
+    transform: scale(1.1);
+}
+
+
+#social .social {
+    height: 30px;
+    width: 600px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#social #arrow {
+    display: block;
+    color: #fff;
+}
+
+#arrow i {
+    margin-top: -9px;
+}
+
+.social i {
+    color: #fff;
+    padding: 0 8px 8px 8px;
+}
+
+.social {
+    font-size: 16px;
+}
+
+#social i {
+    transition: all 0.2s linear;
+}
+
+#social .social i:hover {
+    transform: scale(1);
+    transition: 0.2s linear;
+    margin-right: 0;
+}
+
+#social i:hover {
+    cursor: pointer;
+}
+
+/* ShortenURL begin */
+
+#main > .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#main #form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 30%;
+    border: 1px solid;
+}
+
+#main #form #input {
+    font-size: 2rem;
+    height: 50px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 0;
+    padding-left: 10px;
+    justify-content: center;
+    
+}
+
+#main #form #shorten {
+    justify-content: center;
+    font-size: 2rem;
+    padding-bottom: 2px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 0;
+    width: 200px;
+    height: 50px;
+    
+} 
+
+#main .container #responseField {
+    color: #fff;
+    font-size: 1.5rem;
+    min-width: 30%;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+
+#main h2 {
+    font-size: 3rem;
+}
+
+/* ShortenURL end */
+
+@media screen and (max-width: 768px) {
+
+    h1 {
+        font-size: 6.5rem;
+        padding: 0;
+        margin: 70px 0 0 0;
+    }
+
+    h3 {
+        font-size: 3rem;
+    }
+
+    header {
+        padding: 0;
+    }
+
+    section {
+        margin-top: 3vh;
+    }
+
+    .topnav {
+        width: 100%;
+        z-index: 1000;
+        overflow: visible;
+    }
+
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav a {
+        margin: 0 auto;
+    }
+
+    .topnav.responsive {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 1000;
+        overflow: visible;
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        display: block;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    #menu a {
+        font-size: 2.5rem;
+    }
+
+    .button {
+        font-size: 2.5rem;
+    }
+
+    #contact button[type="submit"] {
+        font-size: 2rem;
+
+    }
+
+    body {
+        
+        background-size: 200%;
+        }
+
+
+}
+
+@media screen and (max-width: 600px) {
+    #index {
+        display: grid;
+        grid-template-rows: auto auto;
+        justify-content: space-around;
+        margin: 30px 0 30px 0;
+    }
+
+    h1 {
+        font-size: 4.5rem;
+        font-weight: 900;
+        text-align: center;
+        padding-top: 0;
+        bottom: 0; 
+    }
+
+    body {
+        background-image:none;
+        background-size: 300%;
+        }
+
+    h2 {
+        font-size: 2.7rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+        padding: 5px 10px;
+    }
+
+    #container {
+        display: none;
+    }
+
+    #menu a {
+        font-size: 2.5rem;
+    }
+
+
+}
+
+@media screen and (max-width: 375px) {
+
+    html {
+        font-size: 1rem;
+    }
+body {
+    background-size: 300%;
+}
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    #menu .topnav a {
+        font-size: 2rem;
+    }
+
+    .button {
+        margin-top: 30px;
+        max-width: 100px;
+    }
+}
+
+  
+@media screen and (min-width: 1800px) {
+
+    #menu .topnav a {
+        font-size: 2rem;
+    }
+
+    h1 {
+        margin-top: 150px;
+        font-size: 8rem;
+    }
+
+    h2 {
+        font-size: 4.5rem;
+    }
+
+    h3 {
+        font-size: 3.75rem;
+    }
+    
+
+    .button {
+        font-weight: 600;
+        font-size: 2.75rem;
+    }
+
+    #contact button[type="submit"] {
+        font-weight: 600;
+        font-size: 2rem;
+    }
+
+     #contact input[type="text"],
+    #contact input[type="email"],
+    #contact input[type="tel"],
+    #contact input[type="url"],
+    #contact textarea {
+        font-size: 1.75rem;
+    }
+
+}

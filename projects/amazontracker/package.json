@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@sendgrid/mail": "^7.4.0",
+    "nightmare": "^3.0.2",
+    "puppeteer": "^5.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zsoltfarn/Zsolt-s-Portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zsoltfarn/Zsolt-s-Portfolio/issues"
+  },
+  "homepage": "https://github.com/zsoltfarn/Zsolt-s-Portfolio#readme"
+}
