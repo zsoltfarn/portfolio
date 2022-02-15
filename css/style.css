@@ -25,8 +25,8 @@ body {
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
     font-style: normal;
-    background-image: url("/images/bg2.jpeg");
-    background-color: #3f88c5;
+    /*background-image: url("/images/bg2.jpeg"); */
+    background-color: #000;
     background-size: cover;
 }
 
