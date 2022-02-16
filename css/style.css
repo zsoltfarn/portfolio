@@ -1,6 +1,14 @@
 /* To do: Make it responsive, mobile friendly */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap');
+@font-face {
+    font-family: 'Font-Bold';
+    src: url("/fonts/Basic-Font-Bold.woff2");
+}
 
+@font-face {
+    font-family: 'Font-Regular';
+    src: url("/fonts/Basic-Font-Regular.woff2");
+}
 
 * {
     /* border: 1px solid; */
@@ -23,7 +31,7 @@ body {
     position: relative;
     padding: 0;
     margin: 0;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Font-Bold', 'Source Sans Pro', sans-serif;
     font-style: normal;
     /*background-image: url("/images/bg2.jpeg"); */
     background-color: #000;
@@ -262,7 +270,7 @@ header {
   #contact textarea,
   #contact button[type="submit"] {
     font-size: 1rem;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Font-Bold', 'Source Sans Pro', sans-serif;
   }
   
   #contact {
@@ -301,7 +309,7 @@ header {
     background: #FFF;
     margin: 0 auto;
     padding: 11px;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Font-Regular', 'Source Sans Pro', sans-serif;
   }
   
   #contact input[type="text"]:hover,
