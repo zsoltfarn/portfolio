@@ -300,12 +300,12 @@ header {
   #contact input[type="tel"],
   #contact input[type="url"],
   #contact textarea {
-      font-size: 1.2rem;
+      font-size: 1rem;
     font-weight: 400;
     min-width: 250px;
     width: 100%;
     border: 0;
-    border-radius: 20px;
+    border-radius: 10px;
     background: #FFF;
     margin: 0 auto;
     padding: 11px;
