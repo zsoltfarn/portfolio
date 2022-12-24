@@ -148,7 +148,7 @@ header {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 22px;
     font-weight: 600;
-    line-height: 0.77;
+    line-height: 1.em;
     text-align: center;
     padding-top: 5px;
   }
@@ -191,8 +191,8 @@ header {
   
   #city {
     width: 286px;
-    height: 46px;
-    border-radius: 4px;
+    height: 40px;
+    border-radius: 10px;
     border: solid 2.5px #000;
     background-color: inherit;
     opacity: 0.73;
@@ -208,7 +208,7 @@ header {
     border: 0;
     width: 140px;
     height: 45px;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #27b7c1;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 18px;
@@ -220,6 +220,7 @@ header {
     text-align: center;
     color: #fff;
     cursor: pointer;
+    margin-left: 10px;
   }
 
   #button:hover {
