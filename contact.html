@@ -38,18 +38,24 @@
         <!-- <div id="logo">
             <div><a href="#"><img src="images/logo.svg" alt="Zsolt Farnas Logo"></a></div>
         </div> -->
-        <div id="menu">
-          <div class="topnav" id="myTopnav"><a id="home" href="index.html">Home</a> <a href="portfolio.html">Portfolio</a> <a
-              href="contact.html">Contact</a> <a href="javascript:void(0);" class="icon" onClick="burgerMenu()"> <em
-                class="fas fa-ellipsis-h"></em></a></div>
-        </div>
+
+        <nav>
+          <div class="menu-icon">
+            <i class="fa fa-bars"></i>
+          </div>
+          <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
     </header>
 
     <section>
         <div class="container">  
             <form id="contact" action="https://formspree.io/maypbwwe" method="POST">
               
-              <h3 id="form-status">Let's talk business.</h3>
+              <h2 id="form-status">Let's talk business.</h3>
               <fieldset>
                 <input placeholder="Your name" name="name" type="text" tabindex="1" required autofocus>
               </fieldset>

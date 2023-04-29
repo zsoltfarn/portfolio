@@ -1,35 +1,17 @@
 // JavaScript Document
+const menuIcon = document.querySelector('.menu-icon');
+const menu = document.querySelector('.menu');
 
+menuIcon.addEventListener('click', () => {
+    menu.classList.toggle('show');
+});
 
-
-/*
-function menu(){
-    let w = window.innerWidth; // checks the browser window width
-    let y = document.getElementById("home");
-
-    if (w <= 768) { // if width is 768px or less, the text "home" will change to "menu"
-        y.textContent = "Menu";
-    } else {
-        y.textContent = "Home";
+document.addEventListener('click', (event) => {
+    if (!menu.contains(event.target) && !menuIcon.contains(event.target)) {
+        menu.classList.remove('show');
     }
-}
-window.onresize = menu;
+});
 
-*/
-
-function burgerMenu() {
-    "use strict";
-    let x = document.getElementById("myTopnav");
-    
-
-    if (x.className === "topnav") {
-        x.className += " responsive";
-        
-    } else {
-        x.className = "topnav";
-        
-    };
-}
 
 
 function social() {
