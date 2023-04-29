@@ -196,7 +196,7 @@ nav {
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
-    max-width: 800px;
+    max-width: 1000px;
     text-align: center;
     transition: all 0.2s linear;
 }
@@ -206,13 +206,13 @@ nav {
     display: flex;
     border: solid white 5px;
     border-radius: 50%;
-    width: 190px;
-    height: 190px;
+    width: 170px;
+    height: 170px;
     color: #3f88c5;
     justify-content: center;
     align-items: center;
-    padding: 10px 25px;
-    margin: 30px;
+    padding: 10px 10px;
+    margin: 10px;
     box-sizing: border-box;
 }
 
@@ -330,8 +330,7 @@ nav {
     cursor: pointer;
     background-color: #FFF;
     font-size: 1.2em;
-    font-weight: 600;
-    width: 100%;
+    width: 30%;
     color:#000;
     margin: 0 auto;
     padding: 10px;
