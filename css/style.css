@@ -10,16 +10,14 @@
     src: url("/fonts/Basic-Font-Regular.woff2");
 }
 
-* {
-    /* border: 1px solid; */
+/* {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -moz-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
     -webkit-transition: all 0.2s linear;
     transition: all 0.2s linear;
-    
-}
+} */
 
 html {
     font-size: 16px;
