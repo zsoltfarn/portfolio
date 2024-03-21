@@ -420,12 +420,12 @@ nav {
 }
 .stag {
     display: flex;
-    border: #FFF solid 1px;
+    
     justify-content: center;
 }
 .the-stag {
-    border: #FFF solid 1px;
-    width: 300px;
+    
+    width: 450px;
 }
 
 /* ShortenURL end */
@@ -434,12 +434,12 @@ nav {
 
     .stag {
             display: flex;
-            border: #FFF solid 1px;
+           
             justify-content: center;
         }
     
         .the-stag {
-            border: #FFF solid 1px;
+            
             width: 300px;
         }
 
