@@ -420,12 +420,12 @@ nav {
 }
 .stag {
     display: flex;
+    border: #FFF solid 1px;
     justify-content: center;
-    text-align: center;
 }
 .the-stag {
-    text-align: center;
-    width: 400px;
+    border: #FFF solid 1px;
+    width: 300px;
 }
 
 /* ShortenURL end */
