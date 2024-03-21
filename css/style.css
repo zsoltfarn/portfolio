@@ -425,7 +425,7 @@ nav {
 }
 .the-stag {
     text-align: center;
-    height: 400px;
+    width: fit-content;
 }
 
 /* ShortenURL end */
