@@ -418,6 +418,17 @@ nav {
     border-radius: 5px;
     justify-content: center;
 }
+.stag {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.the-stag {
+    text-align: center;
+    height: 600px;
+   
+   
+}
 
 /* ShortenURL end */
 
