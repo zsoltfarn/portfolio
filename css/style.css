@@ -35,18 +35,16 @@ body {
     background-size: cover;
 }
 
+div {
+    border-radius: 10px;
+}
+
 body,
 p,
 a,
 h4,
 h3 {
     color: #fff;
-}
-
-section {
-    position: relative;
-    display: block;
-    margin: 0 auto;
 }
 
 footer {
@@ -58,14 +56,6 @@ footer {
     justify-content: center;
     align-items: center;
     height: 100px;
-}
-
-.centered-div {
-    width: 200px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 h1 {
@@ -194,71 +184,40 @@ nav {
 /* Portfolio */
 
 #portfolio {
-    
     display: flex;
-    margin: 50px auto;
+    margin: 0 auto;
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
     max-width: 1000px;
     text-align: center;
-    transition: all 0.2s linear;
 }
 
-#portfolio > a {
-    font-weight: 700;
-    display: flex;
-    border: solid white 5px;
-    border-radius: 50%;
-    width: 170px;
-    height: 170px;
-    color: #3f88c5;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 10px;
-    margin: 10px;
-    box-sizing: border-box;
+#portfolio div {
+    background-color: rgba(255, 255, 255, 1);
+    background-size: 400px;
+    width: 300px;
+    height: 150px;
+    margin: 20px;
+    color: #fff;
+    font-size: xx-large;
+    align-content: center;
+    transition-duration: 0.5s;
+}
+#portfolio div:hover {
+    transform:scale(110%);
+    transition-duration: 0.5s;
 }
 
-#portfolio a:hover {
-    /* border: solid white 10px; */
-    margin-top: 25px;
-    overflow: hidden;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+
+#portfolio p {
+    padding: 10px;
+    background-color: rgba(76, 76, 76, 0.8);
 }
 
-#cryptoviewer {
-    background-size: cover;
-    background-image: url("/images/cryptoviewer.png");
-}
 
-#prowin {
-    background-size: cover;
-    background-image: url("/images/prowin.jpg");
-}
-
-#phonelock {
-    background-size: cover;
-    background-image: url("/images/Cryptofreak.png");
-}
-
-#vanderlust {
-    background-color: #72a8d5;
-}
-
-#wordsmith {
-    background-color: antiquewhite;
-}
-
-.effect div {
-    border-radius: 20px;
-    padding: 8px 20px;
-    background-color: #fff;
-    opacity: 1;
-}
-
-.effect:hover div {
-    opacity: 0.35;
+#marquardt {
+    background: no-repeat url(/projects/marquardt/image/main-pic.jpg);
 }
 
 .zoom {
