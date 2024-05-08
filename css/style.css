@@ -31,7 +31,7 @@ body {
     margin: 0;
     font-family: 'Font-Regular', 'Source Sans Pro', sans-serif;
     font-style: normal;
-    background-color: #000;
+    background-color: #fff;
     background-size: cover;
 }
 
@@ -44,7 +44,7 @@ p,
 a,
 h4,
 h3 {
-    color: #fff;
+    color: #000;
 }
 
 footer {
@@ -98,26 +98,28 @@ a {
 }
 
 .button {
-    display: block;
-    font-size: 1.2rem;
-    text-align: center;
-    color: #fff;
-    padding: 5px 10px 5px 10px;
-    margin: 60px auto;
+    position: relative;
+    font-family: 'Font-Bold';
+    background-color: #FFF;
+    font-weight: 400;
     width: 100px;
+    color: #000;
+    margin: 150px auto;
     border-radius: 50px;
-    box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.3);  
+    border: none;
+    text-align: center;
+    padding: 7px 7px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .button:hover {
-   color: #000;
-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
-   background-color: #fff;
+   color: #fff;
+   background-color: #000;
 }
 
 .button:active {
-    color: #fff;
-    background-color: #000;
+    color: #000;
+    background-color: #fff;
 }
 
 /* Header */
@@ -209,10 +211,10 @@ nav {
     transition-duration: 0.5s;
 }
 
-
 #portfolio p {
     padding: 10px;
-    background-color: rgba(76, 76, 76, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;
 }
 
 
@@ -295,19 +297,18 @@ nav {
   #contact button[type="submit"] {
     cursor: pointer;
     background-color: #FFF;
-    width: 30%;
     color:#000;
     margin: 0 auto;
     border-radius: 50px;
     border: none;
     text-align: center;
-    padding: 10px 10px;
+    padding: 7px 25px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
   }
   
   #contact button[type="submit"]:hover {
-    color: #777;
-        box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.3);
+    color: #fff;
+    background-color: #000;
   }
   
   #contact button[type="submit"]:active {
