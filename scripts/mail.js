@@ -12,10 +12,12 @@
     function success() {
       form.reset();
       button.style = "display: none ";
+      status.style = "color: limegreen ";
       status.innerHTML = "Message sent. Thanks!";
     }
 
     function error() {
+      status.style = "color: lightred ";
       status.innerHTML = "Oops! There was a problem.";
     }
 
