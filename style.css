@@ -298,7 +298,6 @@ noscript{
     position:fixed;
     z-index: 999;
     border: 1px solid var(--color-navbarBorder-dark);
-    
     border-radius: 50px;
     overflow: hidden;
 }
@@ -501,7 +500,7 @@ noscript{
     display: flex;
     align-items: flex-end;
     color: var(--color-white);
-   
+   margin-top: 200px;
 }
 
 @-webkit-keyframes vibrate-1 {
@@ -824,7 +823,7 @@ noscript{
     justify-content: center;
     flex-direction: column;
     padding-top: 200px;
-
+    margin-top: 100px;
 }
 .about-section{
     width: 60%;

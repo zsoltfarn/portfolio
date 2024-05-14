@@ -55,9 +55,6 @@ const sections = document.querySelectorAll('section');
 const navLi = document.querySelectorAll('.navbar .navbar-tabs .navbar-tabs-ul li');
 const mobilenavLi = document.querySelectorAll('.mobiletogglemenu .mobile-navbar-tabs-ul li');
 
-
-
-
 window.addEventListener('scroll', ()=>{
   let current = "";
   sections.forEach(section => {
@@ -67,20 +64,21 @@ window.addEventListener('scroll', ()=>{
     }
   })
 
-
-  mobilenavLi.forEach( li => {
+  mobilenavLi.forEach(li => {
     li.classList.remove('activeThismobiletab');
-    if(li.classList.contains(current)){
+    if (li.classList.contains(current)) {
       li.classList.add('activeThismobiletab')
     }
   })
-navLi.forEach( li => {
-  li.classList.remove('activeThistab');
-  if(li.classList.contains(current)){
-    li.classList.add('activeThistab')
-  }
+  navLi.forEach(li => {
+    li.classList.remove('activeThistab');
+    if (li.classList.contains(current)) {
+      li.classList.add('activeThistab')
+    }
+  })
+ 
 })
-})
+
 console.log('%c Designed and Developed by Zsolt Farnas ', 'background-image: linear-gradient(90deg,#8000ff,#6bc5f8); color: white;font-weight:900;font-size:1rem; padding:20px;');
 
 
@@ -102,8 +100,8 @@ function scrollFunction(){
 }
 
 function scrolltoTopfunction(){
-  document.body.scrollTop = -200;
-  document.documentElement.scrollTop = -200;
+  document.body.scrollTop = 300;
+  document.documentElement.scrollTop = 300;
 }
 // document.addEventListener("contextmenu", function (e){
 //   e.preventDefault();
