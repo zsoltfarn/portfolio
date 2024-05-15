@@ -500,7 +500,6 @@ noscript{
     display: flex;
     align-items: flex-end;
     color: var(--color-white);
-   margin-top: 200px;
 }
 
 @-webkit-keyframes vibrate-1 {
