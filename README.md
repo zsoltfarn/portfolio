@@ -1,4 +1,4 @@
-# Zsolt Farnas - Portofolio
+# Zsolt Farnas - Portfolio
 
 ### Responsive Page
 
