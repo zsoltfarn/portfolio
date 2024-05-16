@@ -47,7 +47,7 @@ const sr = ScrollReveal({
     origin: 'top',
     distance: '60px',
     duration: 500,
-    delay: 50,
+    delay: 1,
 //     reset: true
 });
 
@@ -57,12 +57,20 @@ sr.reveal('.home__social-icon',{ interval: 200});
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
 
 /*===== SEND MAIL =====*/
-function sendEmail() {
-    var name = document.getElementById("name").value;
-    var email = document.getElementById("email").value;
-    var message = document.getElementById("message").value;
 
-    var mailtoLink = "mailto:zsolt.farnas@gmail.com" + "?subject=Message from " + name + "&body=" + encodeURIComponent(message + "\n\nSender's email: " + email);
 
-    window.location.href = mailtoLink;
+/*===== BACK TO TOP =====*/
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("backToTopBtn").style.display = "block";
+    } else {
+        document.getElementById("backToTopBtn").style.display = "none";
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }

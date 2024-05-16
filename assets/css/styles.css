@@ -1,8 +1,19 @@
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+/*===== OWN FONTS =====*/
+@font-face {
+  font-family: myFont-regular;
+  src: url(/assets/fonts/Basic-Font-Regular.woff2);
+}
+
+@font-face {
+  font-family: myFont-bold;
+  src: url(/assets/fonts/Basic-Font-Bold.woff2);
+}
 /*===== VARIABLES CSS =====*/
 :root {
-  --header-height: 3rem;
+  --header-height: 3.5rem;
   --font-semi: 600;
   /*===== Colores =====*/
   /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
@@ -11,7 +22,7 @@
   --first-color: hsl(var(--hue-color), 89%, 60%);
   --second-color: hsl(var(--hue-color), 56%, 12%);
   /*===== Fuente y tipografia =====*/
-  --body-font: "Poppins", sans-serif;
+  --body-font: myFont-regular, "Poppins", sans-serif;
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
   --normal-font-size: .938rem;
@@ -121,6 +132,7 @@ img {
   justify-content: space-between;
   align-items: center;
   font-weight: var(--font-semi);
+  font-family: myFont-bold;
 }
 @media screen and (max-width: 767px) {
   .nav__menu {
@@ -239,6 +251,8 @@ img {
 }
 .button:hover {
   box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
+  background-color: whitesmoke;
+  color: var(--first-color)
 }
 
 /* ===== ABOUT =====*/
@@ -373,6 +387,30 @@ img {
   font-size: var(--smaller-font-size);
 }
 
+/* BACK TO TOP */
+#backToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-family: myFont-regular;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: var(--first-color);
+  /* Change this to your desired background color */
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#backToTopBtn:hover {
+  background-color: whitesmoke;
+  color: var(--first-color)
+}
+
 /* ===== MEDIA QUERIES=====*/
 @media screen and (max-width: 320px) {
   .home {
@@ -478,6 +516,8 @@ img {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 2rem;
   }
+
+  
 }
 @media screen and (min-width: 992px) {
   .bd-grid {
