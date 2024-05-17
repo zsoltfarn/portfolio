@@ -319,7 +319,7 @@ code {
     bottom: -100px;
     left: -100px;
 
-    // animation: noise 1s steps(1) infinite;
+    
     
     content: '';
     opacity: 0.15;
