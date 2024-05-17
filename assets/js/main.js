@@ -19,7 +19,8 @@ class BlobImage {
         this.img = el.querySelector('img')
         this.svg = document.querySelector('svg')
 
-        this.totalPoints = 10
+        this.totalPoints = 7 /* this will change the number of points and will have less curves*/
+
 
         this.mouse = {
             x: 0,
@@ -56,7 +57,7 @@ class BlobImage {
         this.points = []
 
         this.angle = 360 / this.totalPoints
-        this.angleRad = this.angle * (Math.PI / 180)
+        this.angleRad = this.angle * (Math.PI / 160)
 
         this.svg.innerHTML = ''
 
@@ -67,7 +68,7 @@ class BlobImage {
         }
     }
 
-    // Tick
+ // Tick
     tick(nowTime) {
         let p0 = this.points[this.points.length - 1]
         let p1 = this.points[0]
@@ -88,7 +89,7 @@ class BlobImage {
         })
 
         this.el.style.clipPath = 'path(\'' + d + '\')'
-    }
+    } 
 }
 
 /* Blob point */
@@ -178,8 +179,8 @@ function tick(nowTime) {
     requestAnimationFrame(tick)
 }
 
-/* Mouse handler */
-function mouseHandler(e) {
+   /* Mouse handler */
+ function mouseHandler(e) {
     mouse.x = e.pageX
     mouse.y = e.pageY
 }
@@ -201,7 +202,6 @@ function mouseSpeed() {
 
     setTimeout(mouseSpeed, 20)
 }
-
 /* Init */
 const blobs = []
 const mouse = {
