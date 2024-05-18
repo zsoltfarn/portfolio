@@ -450,6 +450,10 @@ svg {
   row-gap: 2rem;
 }
 .work__img {
+  color: var(--second-color);
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
   box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
   border-radius: 0.5rem;
   overflow: hidden;
@@ -459,6 +463,11 @@ svg {
 }
 .work__img img:hover {
   transform: scale(1.1);
+}
+
+.work__title {
+  position: relative;
+  background-color: aquamarine;
 }
 
 /* ===== CONTACT =====*/
@@ -763,6 +772,10 @@ svg {
   .home__img {
     display: none;
   }
+
+    .contact__input {
+      width: 80%;
+    }
 
   .home__social {
     display: none;
