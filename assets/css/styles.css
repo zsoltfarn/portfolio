@@ -19,10 +19,10 @@
   /*===== Colores =====*/
   /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
   /* HSL color mode */
-  --hue-color: 224;
-  --first-color: hsl(var(--hue-color), 89%, 60%);
+  --hue-color: 214;
+  --first-color: hsl(var(--hue-color), 68%, 58%);
   --second-color: hsl(var(--hue-color), 56%, 12%);
-  --button-color: hsl(var(--hue-color), 86%, 70%);
+  --button-color: hsl(var(--hue-color), 78%, 65%);
   /*===== Fuente y tipografia =====*/
   --body-font: myFont-regular, "Poppins", sans-serif;
   --big-font-size: 2rem;
