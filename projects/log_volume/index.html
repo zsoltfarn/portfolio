@@ -74,13 +74,13 @@
 
     <div class="container">
         <h1>Log Volume Calculator</h1>
-        <label for="diameter_left">Log Diameter Left (in meters):</label>
+        <label for="diameter_left">Log Diameter Left (in centimeters):</label>
         <input type="number" id="diameter_l" placeholder="Enter diameter" step="any">
 
-        <label for="diameter_middle">Log Diameter Middle (in meters):</label>
+        <label for="diameter_middle">Log Diameter Middle (in centimeters):</label>
         <input type="number" id="diameter_m" placeholder="Enter diameter" step="any">
 
-        <label for="diameter_right">Log Diameter Right (in meters):</label>
+        <label for="diameter_right">Log Diameter Right (in centimeters):</label>
         <input type="number" id="diameter_r" placeholder="Enter diameter" step="any">
 
         <label for="length">Log Length (in meters):</label>
@@ -97,7 +97,7 @@
         const diameter_m = parseFloat(document.getElementById('diameter_m').value);
         const diameter_r = parseFloat(document.getElementById('diameter_r').value);
 
-        const diameter = (diameter_l + diameter_m + diameter_r) / 3;
+        const diameter = ((diameter_l / 100) + (diameter_m / 100) + (diameter_r / 100)) / 3;
 
 
         const length = parseFloat(document.getElementById('length').value);
