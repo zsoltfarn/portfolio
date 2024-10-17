@@ -7,14 +7,48 @@
   <link rel="stylesheet" href="/assets/css/styles.css">
   <title>Log Volume Calculator</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-      background-color: #f0f0f0;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.input-section {
+  margin-top: 20px;
+}
+
+/* Flexbox for Input Row */
+.input-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-group {
+  flex: 1;
+  margin: 10px;
+}
+
+/* Ensure labels and inputs align nicely */
+label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .back {
+      margin-left: 20px;
+      width: 100px;
     }
 
     .container {
-      max-width: 400px;
+      max-width: 600px;
       margin: 0 auto;
       background-color: white;
       padding: 20px;
@@ -23,6 +57,7 @@
     }
 
     h1 {
+      padding-bottom: 25px;
       text-align: center;
       color: #333;
     }
@@ -31,15 +66,7 @@
       display: block;
       margin-top: 10px;
       font-size: 1.2em;
-    }
-
-    input {
-      width: 100%;
-      padding: 10px;
-      margin-top: 5px;
-      margin-bottom: 15px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
+      font-weight: bold;
     }
 
     button {
@@ -58,11 +85,12 @@
     }
 
     .result {
-      margin-top: 20px;
+      margin-bottom: 20px;
       padding: 10px;
-      font-size: 1.2em;
-      background-color: #f8f9fa;
-      border: 1px solid #ccc;
+      font-size: 1.7em;
+      color: #fff;
+      background-color: rgb(0, 0, 0);
+      border: 0;
       border-radius: 5px;
       text-align: center;
     }
@@ -71,22 +99,56 @@
 </head>
 
 <body>
+  <!-- Back Button -->
+  <div class="nav">
+    <a href="/index.html">
+      <button class="back">Go Back</button>
+    </a>
+  </div>
+  <header>
+    <h1>Wood Log Cubic Meter Calculator</h1>
+  </header>
+  <!-- Main Container -->
+  <div class="container">
+    <!-- Header Section -->
+    
 
-    <div class="container">
-        <h1>Log Volume Calculator</h1>
-        <label for="diameter_left">Log Diameter Left (in centimeters):</label>
-        <input type="number" id="diameter_l" placeholder="Enter diameter" step="any">
+    <!-- Output Section -->
+    <section class="output-section">
+      <div id="output" class="result">...</div>
+    </section>
 
-        <label for="diameter_right">Log Diameter Right (in centimeters):</label>
-        <input type="number" id="diameter_r" placeholder="Enter diameter" step="any">
+    <!-- Input Section -->
+    <section class="input-section">
+      <!-- Diameter Left and Right arranged in one row -->
+      <div class="input-row">
+        <!-- Diameter Left Input -->
+        <div class="input-group">
+          <label for="diameter_l">Diameter Left:</label>
+          <input type="number" id="diameter_l" placeholder="Enter diameter in centimeters" step="any">
+        </div>
 
-        <label for="length">Log Length (in meters):</label>
-        <input type="number" id="length" placeholder="Enter length" step="any">
+        <!-- Diameter Right Input -->
+        <div class="input-group">
+          <label for="diameter_r">Diameter Right:</label>
+          <input type="number" id="diameter_r" placeholder="Enter diameter in centimeters" step="any">
+        </div>
+      </div>
 
-        <button onclick="calculateVolume()">Calculate Volume</button>
+      <!-- Length Input -->
+      <div class="input-group">
+        <label for="length">Length:</label>
+        <input type="number" id="length" placeholder="Enter length in meters" step="any">
+      </div>
+      
+      <!-- Calculate Button -->
+      <div class="input-group">
+        <button onclick="calculateVolume()">Calculate</button>
+      </div>
+    </section>
 
-        <div id="output" class="result">Please enter valid positive numbers for both diameter and length.</div>
-    </div>
+    
+  </div>
 
   <script>
     function calculateVolume() {
@@ -106,7 +168,7 @@
       const radius = diameter / 2;
       const volume = Math.PI * Math.pow(radius, 2) * length;
 
-      document.getElementById('output').innerHTML = `The volume of the log is: <strong>${volume.toFixed(2)} cubic meters</strong>`;
+      document.getElementById('output').innerHTML = `The volume of the log is: <strong>${volume.toFixed(2)} m³</strong>`;
     }
   </script>
 
