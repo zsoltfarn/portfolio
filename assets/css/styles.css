@@ -5,12 +5,12 @@
 /*===== OWN FONTS =====*/
 @font-face {
   font-family: myFont-regular;
-  src: url(/assets/fonts/Basic-Font-Regular.woff2);
+  src: url(/assets/fonts/woff2/OverusedGrotesk-Medium.woff2);
 }
 
 @font-face {
   font-family: myFont-bold;
-  src: url(/assets/fonts/Basic-Font-Bold.woff2);
+  src: url(/assets/fonts/woff2/OverusedGrotesk-Bold.woff2);
 }
 /*===== VARIABLES CSS =====*/
 :root {
@@ -24,7 +24,7 @@
   --second-color: hsl(var(--hue-color), 56%, 12%);
   --button-color: hsl(var(--hue-color), 78%, 65%);
   /*===== Fuente y tipografia =====*/
-  --body-font: myFont-regular, "Poppins", sans-serif;
+  --body-font: myFont-regular;
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
   --normal-font-size: .938rem;
@@ -61,6 +61,10 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   color: var(--second-color);
+}
+
+h1,h2 {
+  font-family: myFont-bold;
 }
 
 h1, h2, p {
@@ -209,6 +213,7 @@ img {
   align-self: center;
 }
 .home__title {
+  font-family: myFont-bold;
   font-size: var(--big-font-size);
   margin-bottom: var(--mb-5);
 }
