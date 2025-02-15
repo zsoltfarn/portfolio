@@ -447,6 +447,9 @@ svg {
 .skills__ux {
   width: 85%;
 }
+.skills__react {
+  width: 60%;
+}
 .skills__img {
   border-radius: 0.5rem;
 }
