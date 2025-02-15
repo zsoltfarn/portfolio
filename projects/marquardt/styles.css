@@ -2,12 +2,12 @@
 
 @font-face {
   font-family: 'Font-Bold';
-  src: url("/fonts/Basic-Font-Bold.woff2");
+  src: url("./fonts/Basic-Font-Bold.woff2");
 }
 
 @font-face {
   font-family: 'Font-Regular';
-  src: url("/fonts/Basic-Font-Regular.woff2");
+  src: url("./fonts/Basic-Font-Regular.woff2");
 }
 
 * {
@@ -201,7 +201,7 @@ footer a {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 0;
     right: 80px;
     background-color: #149517;
@@ -215,7 +215,7 @@ footer a {
 
   .menu li {
 
-    padding: 20px 0 20px 0px;
+    padding: 20px 0 20px 0;
   }
 
   .menu li:hover {
